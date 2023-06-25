@@ -24,9 +24,7 @@ export default function Img2imgPage() {
       <ControlNetInput mode={1} />
       <ImageGenerationButton
         setFinalResults={setFinalResults}
-        defaultCheckpoint={
-          "Realistic_Vision_V2.0-fp16-no-ema.ckpt [c6fe5d4a3e]"
-        }
+        defaultCheckpoint={"Realistic_Vision_V2.0.ckpt [81086e2b3f]"}
         mode={1}
       />
       {result && <ImageGallery result={result} />}
