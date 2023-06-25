@@ -28,7 +28,7 @@ export const ImageGenerationButton = (props: ImageGenerationButtonProps) => {
     txt2img,
   } = useTxt2imgWrap({
     url: process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1",
-    port: "5001",
+    port: process.env.NEXT_PUBLIC_API_PORT || "5001",
   });
 
   const {
@@ -37,12 +37,12 @@ export const ImageGenerationButton = (props: ImageGenerationButtonProps) => {
     img2img,
   } = useImg2imgWrap({
     url: process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1",
-    port: "5001",
+    port: process.env.NEXT_PUBLIC_API_PORT || "5001",
   });
 
   const { query, result: progressResult } = useProgressWrap({
     url: process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1",
-    port: "5001",
+    port: process.env.NEXT_PUBLIC_API_PORT || "5001",
   });
 
   const {

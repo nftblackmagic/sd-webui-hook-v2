@@ -12,6 +12,7 @@ Create a .env file, add NEXT_PUBLIC_API_URL as env var
 
 ```
 NEXT_PUBLIC_API_URL=http://0.0.0.0
+NEXT_PUBLIC_API_PORT=5001
 ```
 
 ### Install
