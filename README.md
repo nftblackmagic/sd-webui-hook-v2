@@ -2,11 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-# Backend setup
+### Backend setup
 
 Follow the instuction of https://github.com/nftblackmagic/sdwebui-api-manager
 
-# Enviroment var
+### Enviroment var
 
 Create a .env file, add NEXT_PUBLIC_API_URL as env var
 
@@ -14,13 +14,13 @@ Create a .env file, add NEXT_PUBLIC_API_URL as env var
 NEXT_PUBLIC_API_URL=http://0.0.0.0
 ```
 
-# Install
+### Install
 
 ```
 yarn install
 ```
 
-# Run website
+### Run website
 
 ```
 yarn run dev
