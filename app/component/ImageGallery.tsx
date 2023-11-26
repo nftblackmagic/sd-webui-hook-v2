@@ -49,6 +49,7 @@ export const ImageGallery = (props: ImageGalleryProps) => {
 
   useEffect(() => {
     if (result) {
+      console.log('mounted >>>', result)
       setSelectedImage(result["images"][0]);
       const generateResults = result["images"].map(
         (image: string, index: number) => {
@@ -137,7 +138,7 @@ export const ImageGallery = (props: ImageGalleryProps) => {
       )}
       <div className="flex flex-row gap-1 snap-x scroll-smooth overflow-x-auto">
         {result &&
-          result["images"].map((image: string, index: number) => (
+          result["images"]?.map((image: string, index: number) => (
             <div className="scroll-ms-6 snap-start" key={image}>
               <img
                 src={
