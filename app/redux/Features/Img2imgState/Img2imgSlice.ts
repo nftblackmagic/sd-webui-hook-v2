@@ -31,6 +31,7 @@ export const img2imgSlice = createSlice({
       state.url = action.payload;
     },
     setSettings: (state, action) => {
+      console.log('setSettings >', action.payload)
       state.settings = action.payload;
     },
     setResult: (state, action) => {

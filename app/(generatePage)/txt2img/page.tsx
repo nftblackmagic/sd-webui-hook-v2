@@ -24,7 +24,7 @@ export default function RealTxtPage() {
       <ControlNetInput mode={0} />
       <ImageGenerationButton
         setFinalResults={setFinalResults}
-        defaultCheckpoint={"Realistic_Vision_V2.0.ckpt [81086e2b3f]"}
+        defaultCheckpoint={"anything-v5-PrtRE.safetensors [7f96a1a9ca]"}
         mode={0}
       />
       {result && <ImageGallery result={result} />}

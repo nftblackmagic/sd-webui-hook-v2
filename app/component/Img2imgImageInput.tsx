@@ -35,6 +35,7 @@ export const Img2imgImageInput = () => {
 
   const imageSizeHandler = (imageSize: { width: number; height: number }) => {
     setImageSize(imageSize);
+    console.log('imageSizeHandler >>', imageSize)
   };
 
   useEffect(() => {

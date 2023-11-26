@@ -206,7 +206,10 @@ const ImageMaskCanvas: FC<ImageMaskCanvasProps> = (
             if (containCrop) {
               imageHandler(dataURL);
               if (imageSizeHandler) {
-                imageHandler(dataURL, canvas.width, canvas.height);
+                imageSizeHandler({
+                  width: canvas.width,
+                  height: canvas.height,
+                });
               }
             }
           }
@@ -232,7 +235,10 @@ const ImageMaskCanvas: FC<ImageMaskCanvasProps> = (
               img.width,
               img.height
             );
-            imageHandler(finalCsv, img.width, img.height);
+            imageSizeHandler({
+              width: img.width,
+              height: img.height,
+            });
           }
         };
       }
@@ -272,7 +278,10 @@ const ImageMaskCanvas: FC<ImageMaskCanvasProps> = (
             if (containCrop) {
               imageHandler(dataURL);
               if (imageSizeHandler) {
-                imageHandler(dataURL, canvas.width, canvas.height);
+                imageSizeHandler({
+                  width: canvas.width,
+                  height: canvas.height,
+                });
               }
             }
           }
@@ -298,7 +307,7 @@ const ImageMaskCanvas: FC<ImageMaskCanvasProps> = (
               img.width,
               img.height
             );
-            imageHandler(finalCsv, img.width, img.height);
+            imageSizeHandler({ width: img.width, height: img.height });
           }
         };
       }
